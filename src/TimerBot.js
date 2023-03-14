@@ -17,7 +17,7 @@ const {
 
 class TimerBot
 {
-    static EXTRA_SPEACH = 859;
+    static EXTRA_SPEACH = 1800;
 
     constructor({ name, lang, token, voiceChannelId, textChannelId }) {
         this.ID = uuidv4();
