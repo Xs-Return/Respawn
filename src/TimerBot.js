@@ -93,9 +93,6 @@ class TimerBot
 
     startCommand = async ({ guild: { id } }) => {
         this.logger.info('Start command launched.');
-
-        const internetDate = await this.getInternetTime();
-        this.logger.info(`Internet : ${ internetDate }`);
         this.logger.info(`Current : ${ this.getCurrentTime() }`);
 
         const guild = await this.client.guilds.cache.get(id);
